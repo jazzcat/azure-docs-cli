@@ -127,10 +127,10 @@ directCommands:
     syntax: az aks agent "What is the status of my cluster?" --refresh-toolsets --model azure/my-gpt4.1-deployment
   optionalParameters:
   - name: --aks-mcp
-    defaultValue: "False"
+    defaultValue: "True"
     acceptedValues: false, true
     summary: |-
-      Enable AKS MCP integration for enhanced capabilities. Traditional mode is the default.
+      Enable AKS MCP integration for enhanced capabilities. MCP mode is the default.
   - name: --api-key
     summary: |-
       API key to use for the LLM (if not given, uses environment variables AZURE_API_KEY, OPENAI_API_KEY). (Deprecated).

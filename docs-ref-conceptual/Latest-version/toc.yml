@@ -53,6 +53,9 @@ items:
       - name: Update Azure CLI
         href: update-azure-cli.md
         displayName: update, upgrade
+      - name: Python 3.12+ Installation Issue
+        href: python-312-installation-issue.md
+        displayName: python, python3.12, distutils, installation, known issue, workaround, linux
   - name: How-to guides
     items:
       - name: Conceptual articles

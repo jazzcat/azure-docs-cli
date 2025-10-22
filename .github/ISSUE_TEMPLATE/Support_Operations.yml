@@ -1,0 +1,100 @@
+name: Support Operations Issue 🔧
+description: Report support or operations related issues with the documentation infrastructure.
+labels:
+  - needs-triage
+  - operations
+  - support
+body:
+- type: markdown
+  attributes:
+    value: |
+      Use this template to report issues related to documentation operations, infrastructure,
+      build processes, or other support-related concerns.
+- type: checkboxes
+  attributes:
+    label: Prerequisites
+    options:
+    - label: Write a descriptive title.
+      required: true
+    - label: Search the existing issues.
+      required: true
+    - label: This is related to operations or infrastructure, not content.
+      required: true
+- type: dropdown
+  attributes:
+    label: Issue Category
+    description: Select the category that best describes this issue
+    options:
+      - Build/CI/CD Pipeline
+      - Documentation Infrastructure
+      - Site Performance
+      - Automation/Scripts
+      - Access/Permissions
+      - Other Operations
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Description of the issue
+    description: >
+      Provide a clear and detailed description of the operations or support issue.
+      Include any error messages, logs, or relevant details.
+    placeholder: |
+      Describe the operational issue, including:
+      - What is not working as expected
+      - When did this start happening
+      - Impact on documentation or workflows
+      - Any error messages or logs
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce (if applicable)
+    description: >
+      If this issue can be reproduced, provide the steps to reproduce it.
+    placeholder: |
+      1. Go to...
+      2. Run...
+      3. See error...
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected behavior
+    description: >
+      Describe what you expected to happen or what the correct behavior should be.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Actual behavior
+    description: >
+      Describe what actually happened or what the incorrect behavior is.
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Related documentation or PR
+    description: Link to any related documentation pages, pull requests, or issues
+    placeholder: https://github.com/jazzcat/azure-docs-cli/pull/123
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Suggested solution or workaround
+    description: >
+      If you have ideas on how to resolve this issue or a workaround that works,
+      please share them here.
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: Priority
+    description: How critical is this issue?
+    options:
+      - Low - Minor inconvenience
+      - Medium - Affects workflow but has workaround
+      - High - Blocks work or significantly impacts users
+      - Critical - Site down or major functionality broken
+  validations:
+    required: true

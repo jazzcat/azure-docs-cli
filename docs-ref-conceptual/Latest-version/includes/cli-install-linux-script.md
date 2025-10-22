@@ -22,6 +22,11 @@ The install script for the Azure CLI requires the following software:
 > The install script only works on Python 3.8.x, 3.9.x, or 3.10.x. This install script does not work
 > on Python 3.11.x or later versions.
 
+> [!NOTE]
+> If you have Python 3.12 or later, the installation script will not work due to the removal of the
+> `distutils` module. For a workaround using a Python virtual environment, see
+> [Python 3.12+ Installation Issue](../python-312-installation-issue.md).
+
 Both installing and updating the Azure CLI requires rerunning the install script:
 
 ```bash
